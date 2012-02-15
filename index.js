@@ -1,26 +1,19 @@
 var http = require ('http');
+var say;
 
 http.createServer(function (request, response) {
     if (request.headers.host === 'foo.localhost') {
-        response.writeHead(200, {
-            'Content-Type': 'text/plain'
-        });
-        response.write('You asked for \"foo.localhost\"');
-        response.end();
+            say = 'You asked for \"foo.localhost\"'
     } else if (request.headers.host === 'bar.localhost') {
-        response.writeHead(200, {
-            'Content-Type': 'text/plain'
-        });
-        response.write('You asked for \"bar.localhost\"');
-        response.end();
+            say = 'You asked for \"bar.localhost\"'
     } else {
-        response.writeHead(200, {
+            say = 'WTF?!'   
+    };
+     response.writeHead(200, {
             'Content-Type': 'text/plain'
         });
-        response.write('WTF?!');
+        response.write(say);
         response.end();
-        
-    }
     
 }).listen(80);
 
