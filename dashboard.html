@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<header>
+			<h1 id="page-title">Dashboard
+				<a id="app-title">McTckt</a>
+			</h1>
+			
+			<h2>Queue
+				<span class="meta-data">
+					<a id="username">User</a>
+					<a id="rolename">Role</a>
+				</span>
+			</h2>
+			<div id="filter">
+				<input type="checkbox" name="select-all" />
+				<span class="ticket-name table-element">Name</span>
+				<span class="ticket-date table-element">Date</span>
+				<span class="ticket-type table-element">Type</span>
+				<select class="table-element" name="views">
+					<option>View 1</option>
+					<option>View 2</option>
+				</select>
+				<button id= new-ticket-button>Add +</button>
+			</div>
+		</header>
+		
+		<section>
+			
+			<table>
+				<tbody>
+					<tr class="table-row">
+						<td>
+							<input type="checkbox" name="selcet-all" />
+						</td>
+						<td class="ticket-name table-element">Name</td>
+						<td class="ticket-date table-element">Date</td>
+						<td class="ticket-type table-element">Type</td>
+						<td class="ticket-priority table-element">Priority</td>
+						<td class="ticket-blurb table-element">I am a blurb and I should be bigger than the rest of the elements in this table and I should make the table dynamically resize to fit me</td>
+					</tr>
+					<tr class="table-row">
+						<td>
+							<input type="checkbox" name="selcet-all" />
+						</td>
+						<td class="table-element ticket-name">Name</td>
+						<td class="table-element ticket-date">Date</td>
+						<td class="table-element ticket-type">Type</td>
+						<td class="table-element ticket-priority">Priority</td>
+						<td class="ticket-blurb table-element">I am a blurb and I should be bigger than the rest of the elements in this table and I should make the table dynamically resize to fit me</td>
+					</tr>
+				</tbody>
+			</table>
+			
+		</section>
+		<footer>
+		</footer>
+	</body>
+</html>
