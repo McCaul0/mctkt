@@ -1,3 +1,5 @@
+//server to receive requests from and serve content to the client
+
 var http = require ('http'),
 	say;
 

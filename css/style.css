@@ -264,8 +264,8 @@ header {
 
 table {
   display: inline-block;
-  margin: 0 40px;
-  width: 880px;
+  margin: 0 0px;
+  width: auto;
   background: #888;
 }
 
